@@ -1,0 +1,9 @@
+{
+  "name": "React Todo",
+  "short_name": "Todo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#242424",
+  "icons": []
+}
