@@ -168,7 +168,7 @@ Database
 
 ### Backend
 
-[Django REST Framework API](https://github.com/ki-hi-ro/task-manager-backend)
+[Django REST Framework API](https://github.com/ki-hi-ro/django_todo)
 
 ---
 
