@@ -168,11 +168,7 @@ Database
 
 ### Backend
 
-Django REST Framework API
-
-### Frontend
-
-React + TypeScript
+[Django REST Framework API](https://github.com/ki-hi-ro/task-manager-backend)
 
 ---
 
