@@ -1,54 +1,103 @@
-# React + TypeScript + Vite
+# 資産化期の行動管理システム Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 人生を経営するためのタスク管理システム
 
-Currently, two official plugins are available:
+Django REST Frameworkで構築したAPIと連携し、
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+収入・技術資産・回復・戦略を管理するためのフロントエンドアプリケーションです。
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## プロジェクト背景
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### フェーズ1：再構築期
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2023.02 ～ 2026.06.16
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+SES企業での開発経験と並行して、
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+* 技術ブログ約350記事
+* Django
+* FastAPI
+* GitHub
+* My Portfolio
+
+などの技術資産を積み上げてきました。
+
+---
+
+### フェーズ2：資産化期
+
+2026.06.18～
+
+個人での価値提供を再始動し、
+
+収入・技術資産・回復・戦略を雪だるま式に成長させるための行動管理システムを開発しています。
+
+---
+
+## 使用技術
+
+* React
+* TypeScript
+* Vite
+* Axios
+
+---
+
+## 関連リポジトリ
+
+### Backend
+
+Django REST Framework
+
+### Frontend
+
+React + TypeScript
+
+---
+
+## 実装予定機能
+
+### タスク管理
+
+* タスク一覧表示
+* タスク追加
+* タスク編集
+* タスク削除
+
+### カテゴリ管理
+
+* カテゴリ表示
+* カテゴリ別フィルタ
+
+### ステータス管理
+
+* 完了チェック
+* 優先度表示
+* 期限表示
+
+### UI改善
+
+* 並び替え
+* 検索機能
+* レスポンシブ対応
+
+---
+
+## マイルストーン①「見える化」
+
+### 目標
+
+Django REST FrameworkのAPIからタスクを取得し、React画面へ表示する。
+
+### 表示項目
+
+* タスク名
+* カテゴリ
+* 完了状態
+* 期限
+
+### 完了基準
+
+React画面に初期データが表示されること。
